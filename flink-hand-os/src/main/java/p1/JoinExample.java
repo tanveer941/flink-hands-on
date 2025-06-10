@@ -42,6 +42,7 @@ public class JoinExample
                         return new Tuple2<Integer, String>(Integer.parseInt(words[0]), words[1]);
                     }
                 });
+        System.out.println("Location Set: " + locationSet.collect());
 
         // join datasets on person_id
         // joined format will be <id, person_name, state>
@@ -54,6 +55,7 @@ public class JoinExample
                         return new Tuple3<Integer, String, String>(person.f0,   person.f1,  location.f1);         // returns tuple of (1 John DC)
                     }
                 });
+        System.out.println("Joined Set: " + joined.collect());
 
         joined.writeAsCsv(params.get("output"), "\n", " ");
 
