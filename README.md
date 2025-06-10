@@ -18,5 +18,9 @@ This example demonstrates how to perform an inner join between two datasets in F
 /Users/tanveem/flink-test/flink-1.19.1/bin/flink run -c p1.JoinExample /Users/tanveem/non_work/builder_winner_git/flink-hands-on/flink-hand-os/target/WordCount-0.0.1-SNAPSHOT.jar --input1 file:///Users/tanveem/non_work/builder_winner_git/flink-hands-on/flink-hand-os/person --input2 file:///Users/tanveem/non_work/builder_winner_git/flink-hands-on/flink-hand-os/location --output file:///Users/tanveem/non_work/builder_winner_git/flink-hands-on/flink-hand-os/innerJoinOutput
 ```
 
-
+## Left Outer Join Example
+This example demonstrates how to perform a left outer join between two datasets in Flink.
+```angular2html
+/Users/tanveem/flink-test/flink-1.19.1/bin/flink run -c p1.LeftOuterJoin /Users/tanveem/non_work/builder_winner_git/flink-hands-on/flink-hand-os/target/WordCount-0.0.1-SNAPSHOT.jar --input1 file:///Users/tanveem/non_work/builder_winner_git/flink-hands-on/flink-hand-os/person --input2 file:///Users/tanveem/non_work/builder_winner_git/flink-hands-on/flink-hand-os/location --output file:///Users/tanveem/non_work/builder_winner_git/flink-hands-on/flink-hand-os/LeftOuterJoinOutput
+```
 
