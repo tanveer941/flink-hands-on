@@ -53,3 +53,8 @@ nc -l 9999
 ```angular2html
 /Users/tanveem/flink-test/flink-1.19.1/bin/flink run -c streaming.DataStreamAPI /Users/tanveem/non_work/builder_winner_git/flink-hands-on/streaming-data/target/streaming-data-0.0.1-SNAPSHOT.jar
 ```
+
+### Streaming application to use reduce to calculate Average Profit month wise
+```angular2html
+/Users/tanveem/flink-test/flink-1.19.1/bin/flink run -c streaming.AverageProfit /Users/tanveem/non_work/builder_winner_git/flink-hands-on/streaming-data/target/streaming-data-0.0.1-SNAPSHOT.jar
+```
