@@ -38,3 +38,18 @@ This example demonstrates how to perform a full outer join between two datasets 
 ```angular2html
 /Users/tanveem/flink-test/flink-1.19.1/bin/flink run -c p1.FullOuterJoin /Users/tanveem/non_work/builder_winner_git/flink-hands-on/flink-hand-os/target/WordCount-0.0.1-SNAPSHOT.jar --input1 file:///Users/tanveem/non_work/builder_winner_git/flink-hands-on/flink-hand-os/person --input2 file:///Users/tanveem/non_work/builder_winner_git/flink-hands-on/flink-hand-os/location --output file:///Users/tanveem/non_work/builder_winner_git/flink-hands-on/flink-hand-os/FullOuterJoinOutput
 ```
+
+## Streaming WordCount Application
+This is a streaming WordCount application that reads text from a socket, counts the occurrences of each word, and prints the results.
+### Command to run the streaming application locally
+```angular2html
+mvn clean package
+```
+### Command to put the data into the socket
+```angular2html
+nc -l 9999
+```
+### Command to run the streaming application on Flink cluster
+```angular2html
+/Users/tanveem/flink-test/flink-1.19.1/bin/flink run -c streaming.DataStreamAPI /Users/tanveem/non_work/builder_winner_git/flink-hands-on/streaming-data/target/streaming-data-0.0.1-SNAPSHOT.jar
+```
