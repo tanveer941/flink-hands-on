@@ -64,3 +64,10 @@ nc -l 9999
 /Users/tanveem/flink-test/flink-1.19.1/bin/flink run -c streaming.Aggregation /Users/tanveem/non_work/builder_winner_git/flink-hands-on/streaming-data/target/streaming-data-0.0.1-SNAPSHOT.jar
 ```
 Input file is avg1 and output is written in the folder `streaming-data/aggregation_output`
+
+### Iterative Streaming Example
+This example demonstrates how to perform iterative streaming in Flink.
+```angular2html
+/Users/tanveem/flink-test/flink-1.19.1/bin/flink run -c streaming.IterateDemo /Users/tanveem/non_work/builder_winner_git/flink-hands-on/streaming-data/target/streaming-data-0.0.1-SNAPSHOT.jar
+```
+
