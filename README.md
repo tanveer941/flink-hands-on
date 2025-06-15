@@ -70,4 +70,14 @@ This example demonstrates how to perform iterative streaming in Flink.
 ```angular2html
 /Users/tanveem/flink-test/flink-1.19.1/bin/flink run -c streaming.IterateDemo /Users/tanveem/non_work/builder_winner_git/flink-hands-on/streaming-data/target/streaming-data-0.0.1-SNAPSHOT.jar
 ```
+## Windowing
 
+### Tumbling Window Example for Processing Time
+This example demonstrates how to use windowing in Flink to calculate the average profit over a sliding window.
+```angular2html
+/Users/tanveem/flink-test/flink-1.19.1/bin/flink run -c main.java.tumbling.AverageProfitTumblingProcessing /Users/tanveem/non_work/builder_winner_git/flink-hands-on/windowing-stream/target/windowing-stream-0.0.2-SNAPSHOT.jar
+```
+Run the above command and then run the following command to send data to the socket:
+```angular2html
+src/main/java/tumbling/DataServerProcessingTime.java in the IntelliJ project
+```

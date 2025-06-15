@@ -7,7 +7,7 @@ import java.io.PrintWriter;
 import java.net.Socket;
 import java.net.ServerSocket;
 
-public class DataServer
+public class DataServerProcessingTime
 {
     public static void main(String[] args) throws IOException
     {
