@@ -58,3 +58,9 @@ nc -l 9999
 ```angular2html
 /Users/tanveem/flink-test/flink-1.19.1/bin/flink run -c streaming.AverageProfit /Users/tanveem/non_work/builder_winner_git/flink-hands-on/streaming-data/target/streaming-data-0.0.1-SNAPSHOT.jar
 ```
+
+### Streaming application to use reduce to calculate Aggregation and Average Profit month wise
+```angular2html
+/Users/tanveem/flink-test/flink-1.19.1/bin/flink run -c streaming.Aggregation /Users/tanveem/non_work/builder_winner_git/flink-hands-on/streaming-data/target/streaming-data-0.0.1-SNAPSHOT.jar
+```
+Input file is avg1 and output is written in the folder `streaming-data/aggregation_output`
