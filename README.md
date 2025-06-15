@@ -81,3 +81,13 @@ Run the above command and then run the following command to send data to the soc
 ```angular2html
 src/main/java/tumbling/DataServerProcessingTime.java in the IntelliJ project
 ```
+
+### Tumbling Window Example for Event Time
+This example demonstrates how to use windowing in Flink to calculate the average profit over a sliding window using event time.
+```angular2html
+/Users/tanveem/flink-test/flink-1.19.1/bin/flink run -c main.java.tumbling.AverageProfitTumblingEvent /Users/tanveem/non_work/builder_winner_git/flink-hands-on/windowing-stream/target/windowing-stream-0.0.2-SNAPSHOT.jar
+```
+Run the above command and then run the following command to send data to the socket:
+```angular2html
+src/main/java/tumbling/DataServerEventTime.java in the IntelliJ project
+```
